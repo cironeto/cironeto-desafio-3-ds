@@ -1,5 +1,6 @@
 package com.devsuperior.bds04.controller.exception;
 
+import org.springframework.dao.InvalidDataAccessApiUsageException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -30,4 +31,5 @@ public class ResourceExceptionHandler {
 
         return ResponseEntity.status(status).body(error);
     }
+
 }
